@@ -23,7 +23,7 @@ public class MainMenuPresenter : MonoBehaviour
     {
         rotationAngle = ANGLE_FULL_CIRCLE / model.Cartridges.Count;
         SpawnCartridgesAroundCenter();
-        AudioManager.Instance.PlayBgm(mainMenuBgm);
+        AudioManager.Instance.PlayBgm(mainMenuBgm, true);
     }
 
     void Update()
@@ -60,6 +60,7 @@ public class MainMenuPresenter : MonoBehaviour
         {
             CartridgeVisualizer visualizer = hitInfo.collider.gameObject.GetComponent<CartridgeVisualizer>();
             AudioManager.Instance.PlaySeOneShot(SelectGameSe);
+            AudioManager.Instance.FadeBgmVolume(0f);
             StartCoroutine(ChangeScene($"SCENE_{visualizer.Info.GameScene}"));
         }
     }

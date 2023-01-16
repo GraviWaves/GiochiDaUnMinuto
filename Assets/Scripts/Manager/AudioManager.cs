@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
@@ -37,6 +38,10 @@ public class AudioManager : MonoBehaviour
 
         bgmSource = gameObject.AddComponent<AudioSource>();
         seSource = gameObject.AddComponent<AudioSource>();
+
+        bgmSource.playOnAwake = false;
+        seSource.playOnAwake = false;
+
         BgmVolume = 1f;
         SeVolume = 1f;
     }
@@ -75,10 +80,29 @@ public class AudioManager : MonoBehaviour
         bgmSource.volume = BgmVolume;
     }
 
+    public void FadeBgmVolume(float targetVolume)
+    {
+        StartCoroutine(Fade(bgmSource, targetVolume, 0.01f));
+    }
+
     public void SetSeVolume(float volume)
     {
         SeVolume = Mathf.Clamp(volume, 0, 1);
         seSource.volume = SeVolume;
+    }
+
+    public void FadeSeVolume(float targetVolume)
+    {
+        StartCoroutine(Fade(seSource, targetVolume, 0.01f));
+    }
+
+    private IEnumerator Fade(AudioSource source, float targetVolume, float fadeVelocity)
+    {
+        while(source.volume > targetVolume)
+        {
+            source.volume -= fadeVelocity;
+            yield return null;
+        }
     }
 
 
@@ -88,10 +112,11 @@ public class AudioManager : MonoBehaviour
         bgmSource.PlayOneShot(clip);
     }
 
-    public void PlayBgm(AudioClip clip)
+    public void PlayBgm(AudioClip clip, bool loop = false)
     {
         bgmSource.volume = BgmVolume;
         bgmSource.clip = clip;
+        bgmSource.loop = loop;
         bgmSource.Play();
     }
 
