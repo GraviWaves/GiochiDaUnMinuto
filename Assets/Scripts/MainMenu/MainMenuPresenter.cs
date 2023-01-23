@@ -61,14 +61,14 @@ public class MainMenuPresenter : MonoBehaviour
             CartridgeVisualizer visualizer = hitInfo.collider.gameObject.GetComponent<CartridgeVisualizer>();
             AudioManager.Instance.PlaySeOneShot(SelectGameSe);
             AudioManager.Instance.FadeBgmVolume(0f);
-            StartCoroutine(ChangeScene($"SCENE_{visualizer.Info.GameScene}"));
+            StartCoroutine(ChangeScene(visualizer.Info.GameScene));
         }
     }
 
-    private IEnumerator ChangeScene(string sceneName)
+    private IEnumerator ChangeScene(Enums.SceneName sceneName)
     {
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene(sceneName);
+        LoadingManager.Instance.LoadSceneAsync(sceneName);
     }
 
 

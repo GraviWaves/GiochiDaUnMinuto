@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SCENE_Test.unity
     guid: f212ac068cc2aa4458deb19c3819da79
+  - enabled: 1
+    path: Assets/Scenes/SCENE_LoadingBar.unity
+    guid: b4e919b83707bf041bd789d6cde767ef
+  - enabled: 1
+    path: Assets/Scenes/SCENE_DuckHunt.unity
+    guid: c822cbe555172e04f9c603c745bdc00e
   m_configObjects: {}

@@ -222,10 +222,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   model: {fileID: 1191640374}
   cartridgeSpawnDistance: 10
-  animationTimeSeconds: 1
+  animationTimeSeconds: 0.5
   gameSelectRaycastDistance: 10
   mainMenuBgm: {fileID: 8300000, guid: 7aa125f3ea93b994eab3d0cf5ec1a0d1, type: 3}
-  switchGameSe: {fileID: 8300000, guid: 370497c6891b2e048a577e00dbc3413b, type: 3}
+  switchGameSe: {fileID: 8300000, guid: b80351d8254512042837c5f5d1e76e94, type: 3}
   SelectGameSe: {fileID: 8300000, guid: ac59bc11ac88bca4aab1fbda03bc115b, type: 3}
 --- !u!114 &1191640374
 MonoBehaviour:
@@ -242,7 +242,7 @@ MonoBehaviour:
   cartridges:
   - {fileID: 11400000, guid: 69836ec1d53d00440b96c2c15642e8ed, type: 2}
   - {fileID: 11400000, guid: 69836ec1d53d00440b96c2c15642e8ed, type: 2}
-  - {fileID: 11400000, guid: 69836ec1d53d00440b96c2c15642e8ed, type: 2}
+  - {fileID: 11400000, guid: e75180bbace0316409b2960d513c0ab3, type: 2}
   cartridgePrefab: {fileID: 6748533803477058805, guid: 88afc8e62e26ae344bebdc55a797694a, type: 3}
   mainCamera: {fileID: 1869053560}
   cartridgesCenter: {fileID: 1545402376}

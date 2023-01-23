@@ -8,6 +8,8 @@ public static class Enums
     public enum SceneName
     {
         MainMenu,
+        LoadingBar,
+        DuckHunt,
         Test
     }
 

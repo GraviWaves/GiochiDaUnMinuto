@@ -1,0 +1,1124 @@
+fileFormatVersion: 2
+guid: 67a3926261ca54b478df1b1b37794f1b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1806
+        width: 328
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ccf08178634f8f40a62e3015ecbeb1c
+      internalID: -1397598552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1806
+        width: 328
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d67e1d49546218b41bfa2061fe825256
+      internalID: 829956582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1806
+        width: 328
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0d7561511a4a8469ec2df4b7c516c7
+      internalID: -1536305357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1806
+        width: 328
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c7f4744250ad944ebf8a6b1295869a8
+      internalID: 1761580957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 1806
+        width: 328
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57cb3125ec2a09a428197b98f3dbad12
+      internalID: 924321090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1464
+        width: 360
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d16b570c894f7243b4489b5182e3eaa
+      internalID: -447625981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 1464
+        width: 239
+        height: 269
+      alignment: 9
+      pivot: {x: 0.67449635, y: 0.52877223}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80bce7f0b7ade204c95731543300357e
+      internalID: -1535361188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 1464
+        width: 239
+        height: 269
+      alignment: 9
+      pivot: {x: 0.67449635, y: 0.52877223}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 410d6bdb9b0ce2f4bb0bcaa1629d09fd
+      internalID: 1794394652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1471
+        width: 250
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ecd94ab6f38d24458648418665298f8
+      internalID: -1020529126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 1471
+        width: 250
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30d6e3c0be6fdf48acebbc6cc08eee8
+      internalID: 224706694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 1471
+        width: 316
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aaa47e3f6086af40b1be76d05341273
+      internalID: -1842912098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 1801
+        width: 316
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a43a749c2e926e4888a601db1a0c44e
+      internalID: 1099891484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1258
+        width: 186
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd60eb57ce3a574193fdedcc3dd38d6
+      internalID: -289084289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 1266
+        width: 186
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d936da89ed1da41a1a7b6d1e594401
+      internalID: -69477872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1245
+        width: 176
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 588a69ebdf048774a817634ee10aef08
+      internalID: -1924081328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 1020
+        width: 148
+        height: 171
+      alignment: 9
+      pivot: {x: 0.33297262, y: -0.91276443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35a24dd80ab96c4383773fa426b2a17
+      internalID: 698960716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 1025
+        width: 177
+        height: 161
+      alignment: 9
+      pivot: {x: 0.33297262, y: -0.91276443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2fb668883de5e748aeff91204dfce11
+      internalID: 717645067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1020
+        width: 138
+        height: 171
+      alignment: 9
+      pivot: {x: 0.33297262, y: -0.91276443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 314dba50f09d12a4694dde8abc13911f
+      internalID: -1946395651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 805
+        width: 132
+        height: 170
+      alignment: 9
+      pivot: {x: 0.33297262, y: -0.91276443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f7745747e1e43a40a8af979efd719ac
+      internalID: 745513381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 802
+        width: 176
+        height: 170
+      alignment: 9
+      pivot: {x: 0.33297262, y: -0.91276443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e70173128e6f2b40918a5ad8c99b8c4
+      internalID: 365059326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 802
+        width: 164
+        height: 165
+      alignment: 9
+      pivot: {x: 0.33297262, y: -0.91276443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd966c7c957f5e4cab3fa6a1335c202
+      internalID: 1409052114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 588
+        width: 99
+        height: 166
+      alignment: 9
+      pivot: {x: 0.33297262, y: -0.91276443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2abb25ec53c87c3478751152e9d05940
+      internalID: 1204257898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 589
+        width: 170
+        height: 159
+      alignment: 9
+      pivot: {x: 0.33297262, y: -0.91276443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb4b21aa75cef44991172968f2af38a
+      internalID: 588643913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1245
+        width: 176
+        height: 153
+      alignment: 9
+      pivot: {x: 2.9740217, y: 0.6907895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb64e4e34700e5b47b0ba5a49d9f4ec2
+      internalID: 2115061818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 1265
+        width: 186
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8de8c8e21ae474286552856a5d5a0e
+      internalID: -2007011149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 1256
+        width: 186
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427e9961e47c4194eb7c75e4345f2c5a
+      internalID: -1683297729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 1021
+        width: 138
+        height: 171
+      alignment: 9
+      pivot: {x: 0.33297262, y: -0.91276443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1b6a372ce7a6841b438907ff463a1a
+      internalID: 2094434079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 1025
+        width: 177
+        height: 161
+      alignment: 9
+      pivot: {x: 0.33297262, y: -0.91276443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6738229e53cae344da3ea13f9cabb69a
+      internalID: -1577279181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 1020
+        width: 148
+        height: 171
+      alignment: 9
+      pivot: {x: 0.33297262, y: -0.91276443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c2286b618837dd4185bef669aeca7a8
+      internalID: -1180702776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 804
+        width: 164
+        height: 165
+      alignment: 9
+      pivot: {x: 0.33297262, y: -0.91276443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9991b9b48a20be94aa497288730b8da8
+      internalID: 1956623728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 802
+        width: 176
+        height: 170
+      alignment: 9
+      pivot: {x: 0.33297262, y: -0.91276443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3203560f2a810a24da3438e1b726f040
+      internalID: 802748775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 803
+        width: 132
+        height: 170
+      alignment: 9
+      pivot: {x: 0.33297262, y: -0.91276443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac7c56e6e2f1e8541b23a033a17d741d
+      internalID: -1844943117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 589
+        width: 170
+        height: 160
+      alignment: 9
+      pivot: {x: 0.33297262, y: -0.91276443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db067b8c47315aa4791976e752d28ee3
+      internalID: 1496022563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 588
+        width: 99
+        height: 166
+      alignment: 9
+      pivot: {x: 0.33297262, y: -0.91276443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554b0d5de88899848a7d7ab0b4870831
+      internalID: -2120005004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 1862
+        y: 1245
+        width: 176
+        height: 153
+      alignment: 9
+      pivot: {x: 2.9740217, y: 0.6907895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea599802eae44e408b46fad062c8ee8
+      internalID: 283989472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 1265
+        width: 186
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac823c45f60c0e349965c965edf53fbc
+      internalID: -1900286002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 1256
+        width: 186
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4bdc37bc8387794697d8a098c5937a9
+      internalID: 1244521881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 1020
+        width: 148
+        height: 171
+      alignment: 9
+      pivot: {x: 0.33297262, y: -0.91276443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da252c85200d4074799e1f76f646b460
+      internalID: -1291486825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 1025
+        width: 177
+        height: 161
+      alignment: 9
+      pivot: {x: 0.52887684, y: 0.5259274}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa58cc026cfcb5442a29edc793a8a018
+      internalID: -672816121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 1021
+        width: 138
+        height: 171
+      alignment: 9
+      pivot: {x: 0.33297262, y: -0.91276443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d7c5007c34b8a4eb87bb76abd1075c
+      internalID: 207154219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 803
+        width: 164
+        height: 165
+      alignment: 9
+      pivot: {x: 0.33297262, y: -0.91276443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12d2333cd6f016a42bee13aacfa0443a
+      internalID: -1495977546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 802
+        width: 176
+        height: 170
+      alignment: 9
+      pivot: {x: 0.33297262, y: -0.91276443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1140409b33a4b4499a9d4ae29072f7
+      internalID: -556125653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 803
+        width: 132
+        height: 170
+      alignment: 9
+      pivot: {x: 0.33297262, y: -0.91276443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c77e09306d7a0524a999a092703b5ef2
+      internalID: 2008393135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 588
+        width: 99
+        height: 166
+      alignment: 9
+      pivot: {x: 0.33297262, y: -0.91276443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ddc56cf326bcd4286d1e8b6e11a8ce
+      internalID: -467763994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TEX_DuckHuntSpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 588
+        width: 170
+        height: 160
+      alignment: 9
+      pivot: {x: 0.33297262, y: -0.91276443}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66928e691f8527e429c6e6882b3014af
+      internalID: 1598176127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1b8633a13d132a243aaca5785081bdd2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TEX_DuckHuntSpriteSheet_30: 1956623728
+      TEX_DuckHuntSpriteSheet_38: -1291486825
+      TEX_DuckHuntSpriteSheet_35: 283989472
+      TEX_DuckHuntSpriteSheet_4: 924321090
+      TEX_DuckHuntSpriteSheet_1: 829956582
+      TEX_DuckHuntSpriteSheet_12: -289084289
+      TEX_DuckHuntSpriteSheet_40: 207154219
+      TEX_DuckHuntSpriteSheet_44: -467763994
+      TEX_DuckHuntSpriteSheet_19: 365059326
+      TEX_DuckHuntSpriteSheet_27: 2094434079
+      TEX_DuckHuntSpriteSheet_5: -447625981
+      TEX_DuckHuntSpriteSheet_29: -1180702776
+      TEX_DuckHuntSpriteSheet_10: -1842912098
+      TEX_DuckHuntSpriteSheet_23: 188307083
+      TEX_DuckHuntSpriteSheet_42: -556125653
+      TEX_DuckHuntSpriteSheet_7: 1794394652
+      TEX_DuckHuntSpriteSheet_20: 1409052114
+      TEX_DuckHuntSpriteSheet_31: 802748775
+      TEX_DuckHuntSpriteSheet_18: 745513381
+      TEX_DuckHuntSpriteSheet_9: 224706694
+      TEX_DuckHuntSpriteSheet_15: 698960716
+      TEX_DuckHuntSpriteSheet_6: -1535361188
+      TEX_DuckHuntSpriteSheet_32: -1844943117
+      TEX_DuckHuntSpriteSheet_25: -2007011149
+      TEX_DuckHuntSpriteSheet_26: -1683297729
+      TEX_DuckHuntSpriteSheet_17: -1946395651
+      TEX_DuckHuntSpriteSheet_21: 1204257898
+      TEX_DuckHuntSpriteSheet_41: -1495977546
+      TEX_DuckHuntSpriteSheet_11: 1099891484
+      TEX_DuckHuntSpriteSheet_24: 2115061818
+      TEX_DuckHuntSpriteSheet_16: 717645067
+      TEX_DuckHuntSpriteSheet_28: -1577279181
+      TEX_DuckHuntSpriteSheet_37: 1244521881
+      TEX_DuckHuntSpriteSheet_43: 2008393135
+      TEX_DuckHuntSpriteSheet_8: -1020529126
+      TEX_DuckHuntSpriteSheet_13: -69477872
+      TEX_DuckHuntSpriteSheet_39: -672816121
+      TEX_DuckHuntSpriteSheet_0: -1397598552
+      TEX_DuckHuntSpriteSheet_36: -1900286002
+      TEX_DuckHuntSpriteSheet_2: -1536305357
+      TEX_DuckHuntSpriteSheet_33: 1496022563
+      TEX_DuckHuntSpriteSheet_14: -1924081328
+      TEX_DuckHuntSpriteSheet_22: 588643913
+      TEX_DuckHuntSpriteSheet_34: -2120005004
+      TEX_DuckHuntSpriteSheet_3: 1761580957
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
