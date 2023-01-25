@@ -9,7 +9,8 @@ public static class Enums
     {
         MainMenu,
         LoadingBar,
-        DuckHunt,
+        DuckHunt_MainMenu,
+        DuckHunt_Game,
         Test
     }
 

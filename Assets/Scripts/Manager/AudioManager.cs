@@ -36,11 +36,8 @@ public class AudioManager : MonoBehaviour
         }
 
 
-        bgmSource = gameObject.AddComponent<AudioSource>();
-        seSource = gameObject.AddComponent<AudioSource>();
-
-        bgmSource.playOnAwake = false;
-        seSource.playOnAwake = false;
+        bgmSource = InstantiateAudioSource();
+        seSource = InstantiateAudioSource();
 
         BgmVolume = 1f;
         SeVolume = 1f;
@@ -80,9 +77,9 @@ public class AudioManager : MonoBehaviour
         bgmSource.volume = BgmVolume;
     }
 
-    public void FadeBgmVolume(float targetVolume)
+    public void FadeBgmVolume(float targetVolume, float fadeSpeed)
     {
-        StartCoroutine(Fade(bgmSource, targetVolume, 0.01f));
+        StartCoroutine(Fade(bgmSource, targetVolume, fadeSpeed));
     }
 
     public void SetSeVolume(float volume)
@@ -91,18 +88,23 @@ public class AudioManager : MonoBehaviour
         seSource.volume = SeVolume;
     }
 
-    public void FadeSeVolume(float targetVolume)
+    public void FadeSeVolume(float targetVolume, float fadeSpeed)
     {
-        StartCoroutine(Fade(seSource, targetVolume, 0.01f));
+        StartCoroutine(Fade(seSource, targetVolume, fadeSpeed));
     }
 
-    private IEnumerator Fade(AudioSource source, float targetVolume, float fadeVelocity)
+    private IEnumerator Fade(AudioSource source, float targetVolume, float fadeTime)
     {
-        while(source.volume > targetVolume)
+        float timer = 0f;
+        while(timer < fadeTime)
         {
-            source.volume -= fadeVelocity;
+            float progress = timer / fadeTime;
+            source.volume = Mathf.Lerp(source.volume, targetVolume, progress);
+            timer += Time.deltaTime;
             yield return null;
         }
+
+        source.Stop();
     }
 
 
@@ -124,5 +126,14 @@ public class AudioManager : MonoBehaviour
     {
         seSource.volume = SeVolume;
         seSource.PlayOneShot(clip);
+    }
+
+
+    private AudioSource InstantiateAudioSource()
+    {
+        var source = gameObject.AddComponent<AudioSource>();
+        source.playOnAwake = false;
+        source.loop = false;
+        return source;
     }
 }

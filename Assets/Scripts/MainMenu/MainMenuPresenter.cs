@@ -9,6 +9,7 @@ public class MainMenuPresenter : MonoBehaviour
     [SerializeField] private float cartridgeSpawnDistance;
     [SerializeField] private float animationTimeSeconds;
     [SerializeField] private float gameSelectRaycastDistance;
+    [SerializeField] private float changeSceneDelay;
 
     [SerializeField] private AudioClip mainMenuBgm;
     [SerializeField] private AudioClip switchGameSe;
@@ -60,14 +61,17 @@ public class MainMenuPresenter : MonoBehaviour
         {
             CartridgeVisualizer visualizer = hitInfo.collider.gameObject.GetComponent<CartridgeVisualizer>();
             AudioManager.Instance.PlaySeOneShot(SelectGameSe);
-            AudioManager.Instance.FadeBgmVolume(0f);
             StartCoroutine(ChangeScene(visualizer.Info.GameScene));
         }
     }
 
     private IEnumerator ChangeScene(Enums.SceneName sceneName)
     {
-        yield return new WaitForSeconds(2f);
+        float targetVolume = 0f;
+        AudioManager.Instance.FadeBgmVolume(targetVolume, changeSceneDelay);
+
+        yield return new WaitForSeconds(changeSceneDelay);
+
         LoadingManager.Instance.LoadSceneAsync(sceneName);
     }
 
