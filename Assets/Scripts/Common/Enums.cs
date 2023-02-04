@@ -4,7 +4,6 @@ using UnityEngine;
 
 public static class Enums
 {
-
     public enum SceneName
     {
         MainMenu,
@@ -13,5 +12,6 @@ public static class Enums
         DuckHunt_Game,
         Test
     }
+
 
 }

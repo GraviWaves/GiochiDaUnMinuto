@@ -20,7 +20,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -1093,9 +1093,9 @@ TextureImporter:
       TEX_DuckHuntSpriteSheet_9: 224706694
       TEX_DuckHuntSpriteSheet_15: 698960716
       TEX_DuckHuntSpriteSheet_6: -1535361188
-      TEX_DuckHuntSpriteSheet_32: -1844943117
-      TEX_DuckHuntSpriteSheet_25: -2007011149
       TEX_DuckHuntSpriteSheet_26: -1683297729
+      TEX_DuckHuntSpriteSheet_25: -2007011149
+      TEX_DuckHuntSpriteSheet_32: -1844943117
       TEX_DuckHuntSpriteSheet_17: -1946395651
       TEX_DuckHuntSpriteSheet_21: 1204257898
       TEX_DuckHuntSpriteSheet_41: -1495977546

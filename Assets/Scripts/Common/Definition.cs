@@ -5,4 +5,5 @@ using UnityEngine;
 public static class Definition
 {
     public static string DuckHuntTopScoreKey = "DuckHunt-TopScore";
+    public static int DuckHuntMaxDuck = 6;
 }
