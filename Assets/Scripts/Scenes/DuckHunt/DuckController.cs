@@ -6,6 +6,17 @@ using UnityEngine.EventSystems;
 
 public class DuckController : MonoBehaviour, IPointerDownHandler
 {
+    // Duck Animation Trigger Names
+    private enum AnimationTrigger
+    {
+        ShotTrigger,
+        FallTrigger,
+        ResetTrigger,
+        FlyAwayTrigger,
+        Vertical,
+        Horizontal
+    }
+
     // Duck animation status 
     public enum DuckStatus
     {
@@ -16,10 +27,10 @@ public class DuckController : MonoBehaviour, IPointerDownHandler
 
     //Constant
     private const float ZER0_SPEED = 0;
-    private const float SPAWN_ANGLE_MIN = 45;
-    private const float SPAWN_ANGLE_MAX = 80;
+    private const float SPAWN_ANGLE_MIN = 30;
+    private const float SPAWN_ANGLE_MAX = 75;
     private const float FALL_SPEED = 7f;
-    private const float DUCK_FALL_DELAY = 1f;
+    private const float DUCK_FALL_DELAY = 0.5f;
 
     //Instantiation time position
     private Vector3 initialPosition;
@@ -27,6 +38,7 @@ public class DuckController : MonoBehaviour, IPointerDownHandler
     //Renderers
     private SpriteRenderer renderer;
     private SpriteRenderer grassRenderer;
+    private AnimatorController animator;
 
     // Duck speed
     private float speed;
@@ -39,6 +51,7 @@ public class DuckController : MonoBehaviour, IPointerDownHandler
         Status = DuckStatus.Standby;
         initialPosition = transform.position;
         renderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<AnimatorController>();
     }
 
     
@@ -84,7 +97,7 @@ public class DuckController : MonoBehaviour, IPointerDownHandler
 
         while (Status == DuckStatus.Flyng)
         {
-            if(transform.position.x > flyZone.x || transform.position.x < -flyZone.x)
+            if (transform.position.x > flyZone.x || transform.position.x < -flyZone.x)
             {
                 direction = new Vector3(-direction.x, direction.y);
             }
@@ -95,6 +108,9 @@ public class DuckController : MonoBehaviour, IPointerDownHandler
             }
 
             transform.position += direction * speed * Time.deltaTime;
+
+            Animate(AnimationTrigger.Horizontal, direction.x);
+            Animate(AnimationTrigger.Vertical, direction.y);
 
             yield return null;  
         }
@@ -108,12 +124,17 @@ public class DuckController : MonoBehaviour, IPointerDownHandler
     {
         float hidePosition = grassRenderer.transform.position.y - grassRenderer.size.y;
 
+        Animate(AnimationTrigger.ShotTrigger);
         yield return new WaitForSeconds(DUCK_FALL_DELAY);
 
-        while(Status == DuckStatus.Falling)
+        Animate(AnimationTrigger.FallTrigger);
+        while (Status == DuckStatus.Falling)
         {
             if(transform.position.y < hidePosition)
             {
+                animator.SetTrigger(AnimationTrigger.ResetTrigger.ToString());
+                yield return null;
+
                 break;
             }
 
@@ -121,6 +142,7 @@ public class DuckController : MonoBehaviour, IPointerDownHandler
             yield return null;
         }
 
+        
         gameObject.SetActive(false);
     }
 
@@ -151,25 +173,23 @@ public class DuckController : MonoBehaviour, IPointerDownHandler
     {
         //if the random number is even: -1, otherwise 1
         int direction = (UnityEngine.Random.Range(1, 3) & 1) == 1 ? -1 : 1;
-        
+
         //Get a random angle 
         float angle = UnityEngine.Random.Range(SPAWN_ANGLE_MIN, SPAWN_ANGLE_MAX);
         return (Quaternion.AngleAxis(angle, Vector3.forward) * Vector3.right).normalized * direction;
     }
 
-    private bool IsDuckShot(Vector2 pointerPosition)
+    private bool IsDuckShot()
     {
+        Vector3 worldPointerPosition = GameManager.Instance.MainCamera.ScreenToWorldPoint(Input.mousePosition);
+        RectTransform duckRect = GetComponent<RectTransform>();
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(duckRect, Input.mousePosition, GameManager.Instance.MainCamera, out Vector2 localPoint);
 
-        Vector3 localPointerPosition = transform.InverseTransformPoint(new Vector3(pointerPosition.x, pointerPosition.y, 0));
-        Vector3 localSpriteExtents = renderer.sprite.bounds.extents;
+        int px = Mathf.Clamp(0, (int)(((localPoint.x - duckRect.rect.x) * renderer.sprite.texture.width) / duckRect.rect.width), (int)duckRect.rect.width);
+        int py = Mathf.Clamp(0, (int)(((localPoint.y - duckRect.rect.y) * renderer.sprite.texture.height) / duckRect.rect.height), (int)duckRect.rect.height);
+        Color pixelColor = renderer.sprite.texture.GetPixel(px, py);
 
-        localPointerPosition = localPointerPosition + localSpriteExtents;
-        localPointerPosition.x /= localSpriteExtents.x * 2;
-        localPointerPosition.y /= localSpriteExtents.y * 2;
-
-        Color shotedColor = renderer.sprite.texture.GetPixel((int)pointerPosition.x, (int)pointerPosition.y);
-
-        if(shotedColor.grayscale != 0)
+        if(pixelColor.a != 0)
         {
             return true;
         }
@@ -177,6 +197,15 @@ public class DuckController : MonoBehaviour, IPointerDownHandler
         return false;
     }
 
+    private void Animate(AnimationTrigger triggerName)
+    {
+        animator.SetTrigger(triggerName.ToString());
+    }
+
+    private void Animate(AnimationTrigger triggerName, float value)
+    {
+        animator.SetFloat(triggerName.ToString(), value);
+    }
 
     public void OnPointerDown(PointerEventData eventData)
     {
@@ -185,12 +214,10 @@ public class DuckController : MonoBehaviour, IPointerDownHandler
             return;
         }
 
-
-        //if(!IsDuckShot(eventData.pressPosition))
-        //{
-        //    return;
-        //}
-
+        if (!IsDuckShot())
+        {
+            return;
+        }
 
         Status = DuckStatus.Falling;
         StartCoroutine(DuckFaling());

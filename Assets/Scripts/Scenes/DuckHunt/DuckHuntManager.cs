@@ -56,7 +56,7 @@ public class DuckHuntManager : MonoBehaviour
 
         float ducksSpeed = duckInitialSpeed;
 
-        while(currentStage < stageMaxCount)
+        while(currentStage <= stageMaxCount)
         {
             while (currentDuckCount < levelMaxDuckCount)
             {
@@ -79,7 +79,8 @@ public class DuckHuntManager : MonoBehaviour
             }
 
             ducksSpeed += 5f;
-            currentDuckCount = 0;
+            currentDuckCount = 0; 
+            currentStage++;
             yield return new WaitForSeconds(gameStartTimerSeconds);
         }
         
